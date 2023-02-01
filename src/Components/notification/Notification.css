@@ -1,0 +1,25 @@
+.notification {
+  font-size: 1rem;
+  white-space: nowrap;
+  padding: 12px 15px;
+  border-radius: 3px;
+  padding-right: 12px;
+  position: fixed;
+  bottom: 10%;
+  right: 5%;
+  z-index: 100;
+  background-color: var(--primary-background-color);
+  box-shadow: 2px 3px 8px var(--box-shadow-color2);
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  border-left: 4px solid;
+}
+
+.error {
+  color: var(--error-color);
+}
+
+.success {
+  background-color: var(--success-color);
+}

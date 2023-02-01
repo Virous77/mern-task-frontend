@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+input {
+  outline: none;
+  font-size: 1rem;
+}
+
+button {
+  cursor: pointer;
+}
+
+:root {
+  --primary-font-color: #00ffff;
+  --secondary-font-color: #474747;
+
+  --primary-background-color: #ffffff;
+
+  --fixed-background-color: #00000066;
+  --box-shadow-color1: #0000001a;
+  --box-shadow-color2: rgba(0, 0, 0, 0.2);
+
+  --border-box-color: #93fdfd;
+  --error-color: #ff0000;
+  --success-color: #04a604;
+}
