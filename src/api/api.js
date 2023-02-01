@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const baseURL = "http://localhost:5000/api/task";
+const baseURL = "https://mern-task-api-kr7i.onrender.com/api/task";
 
 export const getAllTask = async () => {
   try {

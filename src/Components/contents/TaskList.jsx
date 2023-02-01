@@ -9,9 +9,11 @@ const TaskList = ({
   idx,
   handleComplete,
   handleDelete,
-  setEdit,
-  edit,
   setEditTask,
+  handleCompleted,
+  completeLoading,
+  deleteLoading,
+  tid,
 }) => {
   return (
     <div
@@ -28,30 +30,29 @@ const TaskList = ({
               size={20}
               cursor="pointer"
               onClick={() => handleComplete(task)}
+              color={completeLoading && tid === task._id && "red"}
             />
           ) : (
             <BsCheck
               size={20}
               cursor="pointer"
               onClick={() => handleComplete(task)}
+              color={completeLoading && tid === task._id && "green"}
             />
           )}{" "}
           <AiFillEdit
             size={20}
             cursor="pointer"
             onClick={() => {
-              if (edit) {
-                setEdit("");
-              } else {
-                setEdit(task);
-              }
               setEditTask(task);
+              handleCompleted(task);
             }}
           />{" "}
           <MdDelete
             size={20}
             cursor="pointer"
             onClick={() => handleDelete(task._id)}
+            color={deleteLoading && tid === task._id && "red"}
           />{" "}
         </div>
       </div>

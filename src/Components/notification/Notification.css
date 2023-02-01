@@ -21,5 +21,15 @@
 }
 
 .success {
-  background-color: var(--success-color);
+  color: var(--success-color);
+}
+
+@media (max-width: 540px) {
+  .notification {
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    bottom: unset;
+    right: unset;
+  }
 }
